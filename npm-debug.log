@@ -1,0 +1,59 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'app.json',
+1 verbose cli   '--global' ]
+2 info using npm@3.8.9
+3 info using node@v7.6.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 silly fetchPackageMetaData app.json
+8 silly fetchOtherPackageData app.json
+9 silly cache add args [ 'app.json', null ]
+10 verbose cache add spec app.json
+11 silly cache add parsed spec Result {
+11 silly cache add   raw: 'app.json',
+11 silly cache add   scope: null,
+11 silly cache add   name: null,
+11 silly cache add   rawSpec: 'app.json',
+11 silly cache add   spec: '/Users/buren/dev/personal/climate-change-substitutions-analytics/app.json',
+11 silly cache add   type: 'local' }
+12 silly addLocalTarball shasum (computed) bd5584cfdbfd340f30d1d0b62c0ea85c2de0e5dd
+13 verbose addTmpTarball /Users/buren/dev/personal/climate-change-substitutions-analytics/app.json not in flight; adding
+14 verbose correctMkdir /Users/buren/.npm correctMkdir not in flight; initializing
+15 verbose addTmpTarball validating metadata from /Users/buren/dev/personal/climate-change-substitutions-analytics/app.json
+16 verbose tar unpack /Users/buren/dev/personal/climate-change-substitutions-analytics/app.json
+17 verbose tar unpacking to /var/folders/m0/phzyth656bzc9y__stq9k1vm0000gn/T/npm-93487-16f437dd/unpack-2220eaf7
+18 silly gentlyRm /var/folders/m0/phzyth656bzc9y__stq9k1vm0000gn/T/npm-93487-16f437dd/unpack-2220eaf7 is being purged
+19 verbose gentlyRm don't care about contents; nuking /var/folders/m0/phzyth656bzc9y__stq9k1vm0000gn/T/npm-93487-16f437dd/unpack-2220eaf7
+20 silly gunzTarPerm modes [ '755', '644' ]
+21 error not a package /Users/buren/dev/personal/climate-change-substitutions-analytics/app.json
+22 error addLocal Could not install /Users/buren/dev/personal/climate-change-substitutions-analytics/app.json
+23 silly fetchPackageMetaData Error: ENOENT: no such file or directory, open '/var/folders/m0/phzyth656bzc9y__stq9k1vm0000gn/T/npm-93487-16f437dd/unpack-2220eaf7/package.json'
+23 silly fetchPackageMetaData  error for app.json { Error: ENOENT: no such file or directory, open '/var/folders/m0/phzyth656bzc9y__stq9k1vm0000gn/T/npm-93487-16f437dd/unpack-2220eaf7/package.json'
+23 silly fetchPackageMetaData   errno: -2,
+23 silly fetchPackageMetaData   code: 'ENOENT',
+23 silly fetchPackageMetaData   syscall: 'open',
+23 silly fetchPackageMetaData   path: '/var/folders/m0/phzyth656bzc9y__stq9k1vm0000gn/T/npm-93487-16f437dd/unpack-2220eaf7/package.json' }
+24 silly rollbackFailedOptional Starting
+25 silly rollbackFailedOptional Finishing
+26 silly runTopLevelLifecycles Starting
+27 silly runTopLevelLifecycles Finishing
+28 silly install printInstalled
+29 verbose stack Error: ENOENT: no such file or directory, open '/var/folders/m0/phzyth656bzc9y__stq9k1vm0000gn/T/npm-93487-16f437dd/unpack-2220eaf7/package.json'
+30 verbose cwd /Users/buren/dev/personal/climate-change-substitutions-analytics
+31 error Darwin 15.6.0
+32 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "app.json" "--global"
+33 error node v7.6.0
+34 error npm  v3.8.9
+35 error path /var/folders/m0/phzyth656bzc9y__stq9k1vm0000gn/T/npm-93487-16f437dd/unpack-2220eaf7/package.json
+36 error code ENOENT
+37 error errno -2
+38 error syscall open
+39 error enoent ENOENT: no such file or directory, open '/var/folders/m0/phzyth656bzc9y__stq9k1vm0000gn/T/npm-93487-16f437dd/unpack-2220eaf7/package.json'
+40 error enoent ENOENT: no such file or directory, open '/var/folders/m0/phzyth656bzc9y__stq9k1vm0000gn/T/npm-93487-16f437dd/unpack-2220eaf7/package.json'
+40 error enoent This is most likely not a problem with npm itself
+40 error enoent and is related to npm not being able to find a file.
+41 verbose exit [ -2, true ]

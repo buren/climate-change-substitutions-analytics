@@ -1,0 +1,6 @@
+{
+  "name": "Climate Change Substitutions Analytics",
+  "description": "Analytic service for https://github.com/buren/climate-change-substitutions",
+  "repository": "Analytic service for https://github.com/buren/climate-change-substitutions-analytics",
+  "keywords": ["rails"]
+}
