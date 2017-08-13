@@ -1,4 +1,6 @@
-# Climate Change Substitutions Analytics [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+# Climate Change Substitutions Analytics
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 Analytic service for https://github.com/buren/climate-change-substitutions.
 
@@ -14,9 +16,11 @@ __Payload__:
 
 ```json
 {
-  "url": "http://example.com",
-  "original": "some phrase",
-  "replacement": "my phrase"
+  "replacements": [{
+    "url": "http://example.com",
+    "original": "some phrase",
+    "replacement": "my phrase"
+  }]
 }
 ```
 

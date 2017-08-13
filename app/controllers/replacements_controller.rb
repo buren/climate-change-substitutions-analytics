@@ -6,20 +6,26 @@ class ReplacementsController < ApplicationController
   # POST /replacements
   # POST /replacements.json
   def create
-    @replacement = Replacement.new(replacement_params)
+    @replacements = replacements_params.map do |replacement_params|
+      Replacement.create(replacement_params)
+    end
 
     respond_to do |format|
-      if @replacement.save
-        format.json { render :show, status: :created }
+      if @replacements.all?(&:persisted?)
+        format.json { render json: { success: true }, status: :created }
       else
-        format.json { render json: @replacement.errors, status: :unprocessable_entity }
+        format.json do
+          render json: { errors: @replacements.map(&:errors) }, status: :unprocessable_entity
+        end
       end
     end
   end
 
   private
     # Never trust parameters from the scary internet, only allow the white list through.
-    def replacement_params
-      params.permit(:url, :replacement, :original)
+    def replacements_params
+      params.
+        permit(replacements: [:url, :replacement, :original]).
+        fetch(:replacements, {})
     end
 end
